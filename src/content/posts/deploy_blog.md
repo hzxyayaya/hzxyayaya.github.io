@@ -1,9 +1,9 @@
 ---
-title: deploy_blog
+title: 部署博客
 published: 2025-07-07
-description: '第一次部署个人博客'
+description: '第一次部署个人博客——基于fuwari'
 image: ''
-tags: [blog]
+tags: [Blogging]
 category: '个人'
 draft: false 
 lang: 'zh'
@@ -30,6 +30,7 @@ base: 'my-repo',
 ```
 修改`site`后面的值
 - 使用基于你的用户名的地址：`https://<username>.github.io`
+
 `base`可以默认为你的项目的根目录`/`
 2. 配置GitHub Action
 >在你的项目中的 `.github/workflows/` 目录创建一个新文件 `deploy.yml`，并粘贴以下 YAML 配置信息
@@ -82,34 +83,10 @@ jobs:
 
 你的网站现在应该已完成发布了！当你将更改推送到 Astro 项目的存储库时，GitHub Action 将自动为你部署它们。
 
-## 在部署的时候出现一些小问题
-1. 注意astro文件的格式问题
-2. 在`markdown.css`文件中修改两处地方
-第一处
-```css
-22 - a:not(.no-styling) {
-23 -       @apply relative bg-none link font-medium text-[var(--primary)]
-```
-删除`a`和`link`
-```css
-22 +      :not(.no-styling) {
-23 +       @apply relative bg-none font-medium text-[var(--primary)]
-```
-第二处
-```css
-    .copy-btn {
-        all: initial;
-63 -    @apply btn-regular-dark opacity-0 shadow-lg shadow-black/50 absolute active:scale-90 h-8 w-8 top-3 right-3 text-sm rounded-lg transition-all ease-in-out z-20 cursor-pointer;
-    }
-```
+输入https://<username>.github.io，出现你的博客页面，说明已经部署成功
 
-```css
-    .copy-btn {
-        all: initial;
-63 +    @apply bg-gray-800 text-white px-4 py-2 rounded shadow opacity-0 shadow-lg shadow-black/50 absolute active:scale-90 h-8 w-8 top-3 right-3 text-sm rounded-lg transition-all ease-in-out z-20 cursor-pointer;
-    }
-```
-
+之后每次上传到远程仓库时，github action都会自动重新部署
 ## 参考资料
 [fuwari](https://github.com/saicaca/fuwari?tab=readme-ov-file)
+
 [astro.build/zh-cn](https://docs.astro.build/zh-cn/guides/deploy/github/)
