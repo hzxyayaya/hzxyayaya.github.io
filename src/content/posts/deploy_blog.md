@@ -6,7 +6,7 @@ image: ''
 tags: [Blogging]
 category: '个人'
 draft: false 
-lang: 'zh'
+lang: 'zh-CN'
 ---
 ## 使用fuwari模板
 省略nodejs配置
