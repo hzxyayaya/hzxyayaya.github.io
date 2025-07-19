@@ -6,7 +6,7 @@ image: ''
 tags: [ssh]
 category: 'config'
 draft: false 
-lang: 'zh-CN'
+lang: 'zh_CN'
 ---
 
 # 在服务器上启用ssh

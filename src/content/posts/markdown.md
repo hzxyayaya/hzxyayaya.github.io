@@ -7,33 +7,29 @@ category: Examples
 draft: false
 ---
 
-# An h1 header
+# 一级标题
 
-Paragraphs are separated by a blank line.
+段落之间以空行分隔。
 
-2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
-look like:
+第二段 *斜体*、**粗体**和`等宽字体`。分项列表如下：
 
 - this one
 - that one
 - the other one
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
+请注意——不考虑星号——实际文本内容从第 4 列开始。
 
-> Block quotes are
-> written like so.
+> 块引用的写法如下
 >
-> They can span multiple paragraphs,
-> if you like.
+> 如果您愿意，它们可以跨越多个段落
 
 Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
 in chapters 12--14"). Three dots ... will be converted to an ellipsis.
 Unicode is supported. ☺
 
-## An h2 header
+## 二级标题
 
-Here's a numbered list:
+这里是有序列表:
 
 1. first item
 2. second item
@@ -66,7 +62,7 @@ for i in range(10):
     print i
 ```
 
-### An h3 header
+### 三级标题
 
 Now a nested list:
 

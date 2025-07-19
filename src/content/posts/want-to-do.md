@@ -6,7 +6,7 @@ image: ''
 tags: []
 category: ''
 draft: true 
-lang: 'zh-CN'
+lang: 'zh_CN'
 ---
 ## 编写一个可以在windows中自动配置环境的脚本(最好可以交互)
 - [ ] maven
